@@ -43,9 +43,9 @@ class CustomNavbar extends Component {
                 </span>
               </button>
 
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ height: '100px' }}>
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
-                  <li className="nav-item dropdown submenu mega_menu mega_menu_two">
+                  {/* <li className="nav-item dropdown submenu mega_menu mega_menu_two">
                     <Link
                       to="./"
                       className="nav-link dropdown-toggle"
@@ -336,7 +336,7 @@ class CustomNavbar extends Component {
                     <NavLink title="Pricing" className="nav-link" to="/Contact">
                       关于我们
                     </NavLink>
-                  </li>
+                  </li> */}
                 </ul>
                 <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
                   开始使用
