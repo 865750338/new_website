@@ -159,8 +159,8 @@ button:hover {
   align-items: center;
 }
 
-.container {
-  max-width: 890px;
+.containers {
+  width: 890px;
   margin: 0 auto;
 
 }
@@ -231,20 +231,23 @@ button:hover {
   text-align: center;
   margin-top: 16px;
 }
-p.account, p.account a {
+p.account, p.account span {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 0px;
   font-size: 16px;
   color: #333;
+  cursor:pointer;
 }
 
-p.account a{
+p.account span{
   color: #f52605;
   opacity:.95;
+  cursor:pointer;
 }
-p.account a:hover {
+p.account span:hover {
   text-decoration: underline;
+  cursor:pointer;
 }
 .w3l-hotair-form h1 {
   text-align: center;
@@ -299,6 +302,7 @@ p.account a:hover {
   -moz-transition: .3s ease;
   -ms-transition: .3s ease;
   -o-transition: .3s ease;
+  border-radius: 30px;
 }
 
 .w3l-hotair-form button:hover {
