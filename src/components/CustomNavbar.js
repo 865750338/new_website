@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+// import { Link, NavLink } from 'react-router-dom'
 import Sticky from 'react-stickynode'
 
 class CustomNavbar extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       list: [{ key: 0 }]
     }
   }
+
   render() {
     var { mClass, nClass, cClass, slogo, hbtnClass } = this.props
 
@@ -338,9 +340,12 @@ class CustomNavbar extends Component {
                     </NavLink>
                   </li> */}
                 </ul>
-                <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
-                  开始使用
-                </a>
+                {/* <a className={`btn_get btn_hover ${hbtnClass}`} href onClick={this.toLogin}>
+                  登录/注册
+                </a> */}
+                <Link className={`btn_get btn_hover ${hbtnClass}`} to="/login">
+                  登录/注册
+                </Link>
               </div>
             </div>
           </nav>
