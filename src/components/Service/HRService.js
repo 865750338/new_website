@@ -15,8 +15,9 @@ class HRService extends Component {
         </div>
         <div className="container">
           <h2 className="f_size_30 f_600 t_color3 l_height45 text-center mb_90">
-            SaasLand is built for designers like you.
-            <br /> With useful features, an intuitive interface.
+            小美专为门为您提供便捷的文件图片等便捷工具。
+            <br />
+            提升工作效率的不二之选
           </h2>
           <div className="row p_service_info">
             {ServiceData.HRService.map((item) => {
