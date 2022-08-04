@@ -83,52 +83,52 @@ const ServiceData = {
   HRService: [
     {
       id: '1',
-      HRtitles: 'Export Presets',
+      HRtitles: '文件格式转换',
       HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
       Hicon: 'panel',
       rclass: 'pr_70',
       iclass: 'icon_one'
-    },
-    {
-      id: '2',
-      HRtitles: 'Grid and Guides',
-      HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
-      Hicon: 'layout-grid2',
-      rclass: 'pl_50 pr_20',
-      iclass: 'icon_two'
-    },
-    {
-      id: '3',
-      HRtitles: 'Pixel Precision',
-      HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
-      Hicon: 'fullscreen',
-      rclass: 'pl_70',
-      iclass: 'icon_three'
-    },
-    {
-      id: '4',
-      HRtitles: 'Vector Editing',
-      HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
-      Hicon: 'vector',
-      rclass: 'pr_70',
-      iclass: 'icon_four'
-    },
-    {
-      id: '5',
-      HRtitles: 'Cloud Service',
-      HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
-      Hicon: 'cloud-down',
-      rclass: 'pl_50 pr_20',
-      iclass: 'icon_five'
-    },
-    {
-      id: '6',
-      HRtitles: 'Iterate at Speed',
-      HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
-      Hicon: 'bolt',
-      rclass: 'pl_70',
-      iclass: 'icon_six'
     }
+    // {
+    //   id: '2',
+    //   HRtitles: 'Grid and Guides',
+    //   HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
+    //   Hicon: 'layout-grid2',
+    //   rclass: 'pl_50 pr_20',
+    //   iclass: 'icon_two'
+    // },
+    // {
+    //   id: '3',
+    //   HRtitles: 'Pixel Precision',
+    //   HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
+    //   Hicon: 'fullscreen',
+    //   rclass: 'pl_70',
+    //   iclass: 'icon_three'
+    // },
+    // {
+    //   id: '4',
+    //   HRtitles: 'Vector Editing',
+    //   HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
+    //   Hicon: 'vector',
+    //   rclass: 'pr_70',
+    //   iclass: 'icon_four'
+    // },
+    // {
+    //   id: '5',
+    //   HRtitles: 'Cloud Service',
+    //   HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
+    //   Hicon: 'cloud-down',
+    //   rclass: 'pl_50 pr_20',
+    //   iclass: 'icon_five'
+    // },
+    // {
+    //   id: '6',
+    //   HRtitles: 'Iterate at Speed',
+    //   HRdescription: '博格厚颜无耻的家伙只吃了一顿魁梧的大餐，他用腿撑着它，把一个年轻的罪犯扔了。',
+    //   Hicon: 'bolt',
+    //   rclass: 'pl_70',
+    //   iclass: 'icon_six'
+    // }
   ],
   rpost: [
     {

@@ -38,6 +38,7 @@ import ScrollToTopRoute from './ScrollToTopRoute'
 // import BlogGridPage from './Pages/BlogGridPage'
 import NotFound from './Pages/404'
 import Login from './Pages/login/login'
+import './App.css'
 class App extends Component {
   componentDidMount() {
     this.props.hideLoader()

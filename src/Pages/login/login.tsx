@@ -1,7 +1,12 @@
 import React, { FC, useState } from 'react'
 import https from '../../https'
 import './login.css'
-const Login: FC<any> = () => {
+import { message } from 'antd'
+interface Props {
+  history: any
+}
+const Login: FC<any> = (props: Props) => {
+  const { history } = props
   const [username, setUsername] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [passwords, setPasswords] = useState<string>('')
@@ -25,11 +30,15 @@ const Login: FC<any> = () => {
       loginName: 'admin',
       passWord: 6543210
     })
-    const { status, data, message } = res.data
+    const { status, data } = res
     if (status === 200) {
-      localStorage.setItem('userInfo', data)
+      localStorage.setItem('userInfo', JSON.stringify(data))
+      message.info('登录成功')
+      setTimeout(() => {
+        history.push('/')
+      }, 1000)
     } else {
-      setError(message)
+      setError(res.message)
     }
   }
   return (
