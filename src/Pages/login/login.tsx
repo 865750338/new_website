@@ -1,15 +1,37 @@
 import React, { FC, useState } from 'react'
-
+import https from '../../https'
 import './login.css'
 const Login: FC<any> = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username, setUsername] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
+  const [passwords, setPasswords] = useState<string>('')
   const [type, setType] = useState<number>(0)
+  const [error, setError] = useState<string>('')
   const printValues = (e) => {
     e.preventDefault()
-    console.log(username, password)
   }
-
+  const loginInfo = async () => {
+    if (type === 1 && password !== passwords) {
+      setError('两次输入密码不一致')
+      return
+    }
+    if (!password || !username) {
+      setError('账号或密码不能为空')
+      return
+    }
+    const res: any = await https('post', '/api/user/dtLogin', {
+      // loginName: username,
+      // passWord: password
+      loginName: 'admin',
+      passWord: 6543210
+    })
+    const { status, data, message } = res.data
+    if (status === 200) {
+      localStorage.setItem('userInfo', data)
+    } else {
+      setError(message)
+    }
+  }
   return (
     <div>
       <div className="w3l-hotair-form">
@@ -38,7 +60,7 @@ const Login: FC<any> = () => {
                   {type === 1 ? (
                     <input
                       value={password}
-                      onChange={(event) => setPassword(event.target.value)}
+                      onChange={(event) => setPasswords(event.target.value)}
                       name="password"
                       type="password"
                       placeholder="请重复输入密码"
@@ -47,7 +69,14 @@ const Login: FC<any> = () => {
                     ''
                   )}
                   <br />
-                  <button>{type === 0 ? '登录' : '注册'}</button>
+                  <button onClick={loginInfo}>{type === 0 ? '登录' : '注册'}</button>
+                  {error ? (
+                    <span style={{ color: '#f00', width: '100%', textAlign: 'center', display: 'block' }}>
+                      错误:{error}
+                    </span>
+                  ) : (
+                    ''
+                  )}
                 </form>
 
                 {type === 1 ? (
